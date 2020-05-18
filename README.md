@@ -1,3 +1,2 @@
 # iOS_MultiCam_Conferencing
-A Swift project to enable Sending and Receiving multiple camera streams on a single iOS device. 
-Leverages Vonage Video API (formerly TokBox OpenTok)
+This Proof of Concept app written in Swift and built on the Vonage Video API (formerly TokBox OpenTok), enables Multi-Camera video streaming To and From each participant’s device and provides secure video conferencing. Video streams are encrypted using SRTP. 
