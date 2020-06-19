@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserCamerasView" customModule="VideoChat" customModuleProvider="target">
+            <connections>
+                <outlet property="camera1View" destination="cXi-Kl-Cbd" id="ne7-ya-xge"/>
+                <outlet property="camera2View" destination="tCv-W0-sra" id="wob-u2-n51"/>
+                <outlet property="camera3View" destination="dFk-qo-ShC" id="KRS-0f-L2Z"/>
+                <outlet property="camera4View" destination="uXS-Gy-3vv" id="ET4-Q8-pet"/>
+                <outlet property="titleLabel" destination="NBg-hz-7yR" id="SmB-hz-tUu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ANY-uR-TN3">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="351"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-hz-7yR">
+                    <rect key="frame" x="20" y="8" width="374" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="2Dd-Qv-gnl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-Kl-Cbd">
+                    <rect key="frame" x="0.0" y="44" width="207" height="153.5"/>
+                    <color key="backgroundColor" name="camera1_background"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-W0-sra">
+                    <rect key="frame" x="207" y="44" width="207" height="153.5"/>
+                    <color key="backgroundColor" name="camera2_background"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFk-qo-ShC">
+                    <rect key="frame" x="0.0" y="197.5" width="207" height="153.5"/>
+                    <color key="backgroundColor" name="camera2_background"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXS-Gy-3vv">
+                    <rect key="frame" x="207" y="197.5" width="207" height="153.5"/>
+                    <color key="backgroundColor" name="camera1_background"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="NBg-hz-7yR" firstAttribute="leading" secondItem="ANY-uR-TN3" secondAttribute="leading" constant="20" id="0zY-To-gN7"/>
+                <constraint firstItem="tCv-W0-sra" firstAttribute="trailing" secondItem="7cK-yy-e0g" secondAttribute="trailing" id="73t-nO-R3W"/>
+                <constraint firstItem="tCv-W0-sra" firstAttribute="firstBaseline" secondItem="cXi-Kl-Cbd" secondAttribute="firstBaseline" id="BZ9-9A-0hA"/>
+                <constraint firstItem="tCv-W0-sra" firstAttribute="top" secondItem="NBg-hz-7yR" secondAttribute="bottom" constant="8" id="EGG-Jb-42g"/>
+                <constraint firstItem="uXS-Gy-3vv" firstAttribute="top" secondItem="tCv-W0-sra" secondAttribute="bottom" id="K30-Sg-EFh"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="height" secondItem="uXS-Gy-3vv" secondAttribute="height" id="Lkb-3o-gCs"/>
+                <constraint firstItem="dFk-qo-ShC" firstAttribute="leading" secondItem="7cK-yy-e0g" secondAttribute="leading" id="P5b-nQ-JDl"/>
+                <constraint firstItem="NBg-hz-7yR" firstAttribute="top" secondItem="ANY-uR-TN3" secondAttribute="top" constant="8" id="Phd-ul-srh"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="width" secondItem="tCv-W0-sra" secondAttribute="width" id="QFB-on-Y1W"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="leading" secondItem="7cK-yy-e0g" secondAttribute="leading" id="QFN-AY-6La"/>
+                <constraint firstItem="7cK-yy-e0g" firstAttribute="bottom" secondItem="uXS-Gy-3vv" secondAttribute="bottom" id="Vhd-mI-rPs"/>
+                <constraint firstItem="uXS-Gy-3vv" firstAttribute="trailing" secondItem="7cK-yy-e0g" secondAttribute="trailing" id="Xvx-Si-b7v"/>
+                <constraint firstItem="uXS-Gy-3vv" firstAttribute="leading" secondItem="dFk-qo-ShC" secondAttribute="trailing" id="dW4-cg-q6d"/>
+                <constraint firstItem="dFk-qo-ShC" firstAttribute="top" secondItem="cXi-Kl-Cbd" secondAttribute="bottom" id="djb-La-Vcg"/>
+                <constraint firstItem="tCv-W0-sra" firstAttribute="leading" secondItem="cXi-Kl-Cbd" secondAttribute="trailing" id="dme-9i-nJL"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="height" secondItem="dFk-qo-ShC" secondAttribute="height" id="dvX-dc-fLK"/>
+                <constraint firstAttribute="trailing" secondItem="NBg-hz-7yR" secondAttribute="trailing" constant="20" id="h5N-ew-F9l"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="top" secondItem="NBg-hz-7yR" secondAttribute="bottom" constant="8" id="i7d-pm-BWb"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="height" secondItem="tCv-W0-sra" secondAttribute="height" id="jKw-Z5-rCM"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="width" secondItem="dFk-qo-ShC" secondAttribute="width" id="oVn-LO-mAt"/>
+                <constraint firstItem="dFk-qo-ShC" firstAttribute="bottom" secondItem="7cK-yy-e0g" secondAttribute="bottom" id="ogD-gM-APt"/>
+                <constraint firstItem="cXi-Kl-Cbd" firstAttribute="width" secondItem="uXS-Gy-3vv" secondAttribute="width" id="vn7-4t-fbJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7cK-yy-e0g"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="402.12053571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="camera1_background">
+            <color red="0.2627450980392157" green="0.72549019607843135" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="camera2_background">
+            <color red="0.83529411764705885" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8EU-dY-R6q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User SelectorVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UserSelectorVC" customModule="VideoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h66-1W-32L">
+                                <rect key="frame" x="60" y="243.5" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DiZ-M8-zbZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="Srp-9J-iWS"/>
+                                </constraints>
+                                <state key="normal" title="User 1"/>
+                                <state key="selected">
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectUser1" destination="BYZ-38-t0r" eventType="touchUpInside" id="4He-G4-hZW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select &quot;User 1&quot; or &quot;User 2&quot; to start video chat." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-5W-hos">
+                                <rect key="frame" x="20" y="206" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKD-fv-Fem">
+                                <rect key="frame" x="100" y="363.5" width="214" height="30"/>
+                                <state key="normal" title="START VIDEO CONFERENCING"/>
+                                <connections>
+                                    <action selector="confirmAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="A17-l3-wRA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-Q8-8C0">
+                                <rect key="frame" x="274" y="243.5" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MPI-wg-NPI"/>
+                                    <constraint firstAttribute="width" constant="80" id="un6-ey-jKf"/>
+                                </constraints>
+                                <state key="normal" title="User 2"/>
+                                <state key="selected">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectUser2" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzb-7h-FoQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cc6-5W-hos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Q5-s0-Imz"/>
+                            <constraint firstItem="MKD-fv-Fem" firstAttribute="top" secondItem="h66-1W-32L" secondAttribute="bottom" constant="80" id="CDQ-Zw-FCw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6z0-Q8-8C0" secondAttribute="trailing" constant="60" id="Fsk-oN-Ki0"/>
+                            <constraint firstItem="h66-1W-32L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="H9S-gI-nlO"/>
+                            <constraint firstItem="h66-1W-32L" firstAttribute="top" secondItem="cc6-5W-hos" secondAttribute="bottom" constant="17" id="LqZ-cE-fSV"/>
+                            <constraint firstItem="cc6-5W-hos" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="SQS-M5-XcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cc6-5W-hos" secondAttribute="trailing" constant="20" id="e7h-Zb-z95"/>
+                            <constraint firstItem="MKD-fv-Fem" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXu-tW-Hx5"/>
+                            <constraint firstItem="6z0-Q8-8C0" firstAttribute="firstBaseline" secondItem="h66-1W-32L" secondAttribute="firstBaseline" id="wyF-Sb-wN5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y6O-qf-Hzv"/>
+                    <connections>
+                        <outlet property="confirtButton" destination="MKD-fv-Fem" id="KR2-g7-apy"/>
+                        <outlet property="user1Button" destination="h66-1W-32L" id="KTo-bQ-F7W"/>
+                        <outlet property="user2Button" destination="6z0-Q8-8C0" id="VhG-Ak-8dx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="deX-vp-cmM">
+            <objects>
+                <viewController restorationIdentifier="VideoVC" storyboardIdentifier="VideoVC" id="tu8-2i-zLG" customClass="VideoVC" customModule="VideoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziY-vW-UAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-L5-Cgd" customClass="UserCamerasView" customModule="VideoChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="470" width="414" height="426"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Interlocutor"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5j2-lZ-7bZ" customClass="UserCamerasView" customModule="VideoChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="426"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="My Cameras"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ipI-L5-Cgd" firstAttribute="leading" secondItem="NH1-wY-5ar" secondAttribute="leading" id="2Tc-dU-Bph"/>
+                            <constraint firstAttribute="bottom" secondItem="ipI-L5-Cgd" secondAttribute="bottom" id="4Mz-Vs-YZ9"/>
+                            <constraint firstItem="5j2-lZ-7bZ" firstAttribute="height" secondItem="ipI-L5-Cgd" secondAttribute="height" id="5At-Se-lXb"/>
+                            <constraint firstItem="5j2-lZ-7bZ" firstAttribute="leading" secondItem="NH1-wY-5ar" secondAttribute="leading" id="TfC-kt-N2G"/>
+                            <constraint firstItem="ipI-L5-Cgd" firstAttribute="trailing" secondItem="NH1-wY-5ar" secondAttribute="trailing" id="eHb-tU-eti"/>
+                            <constraint firstItem="5j2-lZ-7bZ" firstAttribute="top" secondItem="NH1-wY-5ar" secondAttribute="top" id="fnp-RH-yLO"/>
+                            <constraint firstItem="ipI-L5-Cgd" firstAttribute="top" secondItem="5j2-lZ-7bZ" secondAttribute="bottom" id="nr2-t3-kkk"/>
+                            <constraint firstItem="5j2-lZ-7bZ" firstAttribute="trailing" secondItem="NH1-wY-5ar" secondAttribute="trailing" id="owi-ZB-Izr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NH1-wY-5ar"/>
+                    </view>
+                    <connections>
+                        <outlet property="interlocutorCamerasView" destination="ipI-L5-Cgd" id="HuE-g8-M24"/>
+                        <outlet property="myCamerasView" destination="5j2-lZ-7bZ" id="kbf-Fz-0o4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRN-dr-Vu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771.0144927536232" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oVh-fc-Iwn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8EU-dY-R6q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bhd-hw-Yzv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gCi-Ry-cbD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHz-ho-C60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
